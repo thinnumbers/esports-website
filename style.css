@@ -1,0 +1,140 @@
+*{
+border: 1px solid #dedede; /* border for the whole website (for some reason it messes up the navigation bar if i remove this)*/
+}
+body,html{
+  margin: 0px; /* margin set to 0 default for body elements*/
+  padding: 0px; /* padding set to 0 default for body elements */
+}
+body{
+  font-family: sans-serif; /* using font sans-serif */
+  background-color: #dedede; /* a specific shade of white/grey */
+}
+h1{
+  margin:0px; /* margin set to 0 for h1 elements */
+  padding:0px; /* padding set to 0 for h1 elements */
+  border: 0px; /* border set to 0 for h1 elements */
+}
+h2{
+  margin:0px; /* margin set to 0 for h2 elements */
+  padding:0px; /* padding set to 0 for h2 elements */
+  margin-top:5px; /* margin top set to 5 px*/
+  border:0px; /* border set to 0 */
+}
+h3{
+  margin:0px; /* margin set to 0px for h3 elements */
+  margin-top: 5px; /* margin top set to 5 px */
+  padding:0px; /* padding set to 0 px */
+}
+p{
+  margin:0px; /* margin set to 0 for p */
+  padding: 0px; /* padding set to 0 for p*/
+  padding-bottom: 40px; /* padding bottom set to 40 px*/
+  border:0px; /* border set to 0 for p*/
+}
+span{
+  padding-left: 25px; /* padding left 25 px for span */
+  padding-right: 25px; /* padding right 25 px for span */
+}
+#topContainer{ /* style elements for top container */
+  position: fixed; /* all elements set to fixed position in this conatiner */
+}
+#title{ /* top logo */
+  background-image: url('https://1lal3e4eckus2d9p8g17wl8c-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Tracer-Banner.jpg'); /* tracer image background */
+  background-size: cover; /* background set to cover */
+  background-repeat: no-repeat; /* non-repeat image */
+  background-position: center; /* center the background image */
+  padding-top: 40px; /* padding top set to 40px*/
+  padding-bottom: 40px; /* padding bottom set to 40 px*/
+  padding-left: 50px; /* padding left 50 px */
+  font-size: 300%; /* set font to 300% */
+  color: #fff; /* white color*/
+}
+#navigation{ /* navigation bar */
+  border: 10px solid #222222; /* sets the border a shade of black */
+  width: 100vw; /* width of 100 view width*/
+  height: 30px; /* height 30 px */
+  text-align: right; /* text aligned to the right because the content is on the left (contrast) */
+  background-color: #222222; /* sets background to a shade of black*/
+}
+#linkSpacing{ /* spacing links on navigation bar */
+  border: 0px; /* remove border */
+  padding-left: 40px; /* space 40 px on the left */
+  padding-right: 40px; /* space 40 px on the right */
+  color: white; /* the text is set to white */
+  font-size: 150%; /* font size set to 150% */
+  text-decoration: none; /* remove the forced underline */
+  font-weight: bold; /* makes text look thicker*/
+}
+#mainContainer{ /* main body container id */
+ margin-top: 210px; /* makes space for the top logo part*/
+ margin-left:100px; /* makes space left so the text doesnt go across the whole screen */
+ margin-right: 100px; /* makes space right so the text doesnt go across the whole screen */
+}
+#headerContainer{ /* header container id */
+  text-align: left; /* left text align */
+  font-size: 20pt; /* font size set to 20 pt */
+  padding-top: 20px; /* padding top set to 20 px */
+  padding-bottom: 20px; /* padding bottom set to 20 px */
+}
+.contentContainer{ /* content container id */
+  font-size: 12pt; /* set font to 12pt */
+  line-height: 2; /* sets line height to 2 */
+  padding-top: 20px; /* padding top set to 20px */
+  padding-bottom: 20px; /* padding bottom set to 20px */
+}
+
+.galleryContainer{ /* gallery page container id */
+  font-size: 15pt; /* sets font to 15 */
+  line-height: 2; /* sets line height to 2*/
+  text-align: center; /* puts gallery content in the center */
+  padding-top: 20px; /* padding top set to 20px */
+  padding-bottom: 20px;/* padding bottonm set to 20px (both for spacing)*/
+}
+
+.linkBannerContainer{ /* link page container */
+  padding: 0px; /* sets padding to 0 (spacing) */
+  margin: 0px; /* sets margin to 0 (spacing)*/
+  margin-top: 20px; /* sets the top margin to 20px (spacing)*/
+  display: inline-block; /* makes the content inline and block*/
+  text-align: center; /* puts content in the center */
+}
+
+#imageSize{ /* resize image (first option) used for first and second image in home page*/
+  width: 20%; /* width set to 20% */
+  height: 20%; /* height set to 20% */
+}
+#imageSize2{ /* resize image (second option) used for the last image on home page */
+  width: 30%; /* width set to 30% instead*/
+  height: 30%; /* height set to 30% instead*/
+}
+#galleryImage{ /* resize images in the gallery page */
+  width: 100%; /* set width to 100% */
+  height: 100%; /* set height to 100% */
+  border: 2px solid #669cde; /* puts a blue border of 2px around each image*/
+}
+#banner{ /* link banners for the link page */
+  width: 100%; /* set width to 100% */
+  height: 100%; /* set height to 100% */
+  margin-bottom: 10px; /* adds space belwo by 10px */
+}
+.imageWithText{ /* image with text element for home page */
+  padding-top: 10px; /* adds 10 px spacing to the top*/
+  padding-bottom: 5px; /*adds 5 px spacing to the bottom */
+  display:flex; /* sets the images to flex */
+}
+.imageGallery{ /* images in the gallery element*/
+  padding: 40px; /* sets spacing all around to 40px */
+  padding-top: 10px; /* resets top to 10 px */
+  padding-bottom: 30px; /* resets bottom to 30 px */
+  width: 450px; /* set a specific width for the element for spacing */
+  display:inline-block; /* makes the images inline but also a block */
+}
+#linkSpacing:hover{ /* if you hover over the navigation links*/
+  color: #ed9332; /* the words will turn orange */
+}
+#galleryImage:hover{ /* if you hover over the gallery images */
+  border: 4px solid #ed9332; /* the image border will become bigger and orange */
+}
+#banner:hover{ /* if you hover of the link banner images*/
+  border: 4px solid #ed9332; /* the banner border will become bigger and orange */
+}
